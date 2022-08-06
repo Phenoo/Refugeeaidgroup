@@ -1,0 +1,216 @@
+:root {
+    --litorange: #ff0e56;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-image: url(/images/undraw_Gifts_re_97j6.png);
+    background-position: center;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 2px solid var(--litorange);
+}
+
+.container .form-outer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .form-outer form {
+    display: flex;
+    width: 400%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-outer form .page {
+    width: 25%;
+    height: 100%;
+    transition: margin-left 0.3s ease-in-out;
+    text-align: left;
+}
+
+.headline {
+    text-transform: capitalize;
+}
+
+.form-outer form .page .field {
+    width: 330px;
+    height: 45px;
+    display: flex;
+    position: relative;
+}
+
+form .page .field .label {
+    position: absolute;
+    margin: 1rem 0;
+    top: -30px;
+    font-weight: 500;
+}
+
+form .page .field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+form .page .field select {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btns {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+form .page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    border: none;
+    background: var(--litorange);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+form .page .field button:hover {
+    background: #fff;
+    color: var(--litorange);
+    border: 2px solid var(--litorange);
+}
+
+form .page .btns button {
+    margin-top: -20px!important;
+}
+
+form .page .btns button.prev {
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+form .page .btns button.next {
+    margin-left: 3px;
+}
+
+.container .progress-bar {
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+}
+
+.container .progress-bar .step {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.container .progress-bar .step p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.progress-bar .step .bullet {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.progress-bar .step .bullet.active {
+    border-color: var(--litorange);
+    background: var(--litorange);
+}
+
+.progress-bar .step .bullet span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-bar .step .bullet.active span {
+    display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after {
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -107px;
+    height: 3px;
+    width: 107px;
+    background: #262626;
+}
+
+.progress-bar .step .bullet.active:after {
+    background: var(--litorange);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+    display: none;
+}
+
+.progress-bar .step p.active {
+    color: var(--litorange);
+    transition: 0.2s linear;
+}
+
+.progress-bar .step .check {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.progress-bar .step .check.active {
+    display: block;
+    color: #fff;
+}
+
+.container2 {
+    margin-bottom: 1rem;
+}
+
+.footer-container {
+    margin-top: 1rem;
+}

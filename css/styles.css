@@ -1,0 +1,1085 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  border: 0;
+  background: none;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* 
+::placeholder {
+    padding: 0 $rem1;
+    font-size: $rem1;
+    font-family: $poppins;
+} */
+.nav-container {
+  background-image: url(/images/IMG_20220327_002904.jpg);
+  background-position: 100%;
+  height: auto;
+  padding: 0.2rem 1rem 1rem;
+  background-size: cover;
+}
+
+.nav-container .header {
+  background-color: #0f256b;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 3px;
+}
+
+.nav-container .nav-donate {
+  margin: 0;
+  padding: .75rem;
+  display: block;
+}
+
+.nav-container .nav-donate #nav-donate:hover {
+  font-weight: 700;
+}
+
+.nav-container .nav-donate .nav-donate-btn {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  font-family: "Jost";
+  background-color: #ff0e56;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.nav-container .nav-toggle {
+  background-color: #2e2e2e;
+  width: 100%;
+  text-align: right;
+  border-radius: 3px;
+}
+
+.nav-container .nav-toggle .menu-btn {
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.nav-container .nav-toggle .menu-btn svg {
+  font-weight: 200;
+}
+
+.nav-container .container1 {
+  margin-top: 4rem;
+  color: #ffffff;
+  padding-bottom: 1.5rem;
+}
+
+.nav-container .container1 .tophead {
+  font-size: 2rem;
+  line-height: 0.9;
+  margin: 0 0 1.5rem;
+  font-family: "Jost";
+}
+
+.nav-container .container1 .worlder {
+  font-size: 1rem;
+  line-height: 0.9;
+  margin: 1.5rem 0 3rem;
+}
+
+.nav-container .container1 .donate {
+  background-color: #07b0b6;
+}
+
+.nav-container .container1 .donate:hover {
+  background-color: #07b0b6;
+  color: #ffffff;
+  border: none;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Sidenotez-Demo';
+  gap: 2px;
+}
+
+.logo svg {
+  color: #ff0e56;
+  font-size: 2rem;
+}
+
+.logo .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.links {
+  background-color: #2e2e2e;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.links a {
+  display: block;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0.5rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.links a:hover {
+  background-color: #ff0e56;
+  padding-left: 2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.show-links {
+  z-index: 102;
+  height: 14rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.button-div {
+  margin: 1.5rem 0;
+}
+
+.donate {
+  text-transform: capitalize;
+  font-family: "Jost";
+  background-color: #ff0e56;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.donate:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.donate:hover {
+  border: 2px solid #ff0e56;
+  background: none;
+  color: #ff0e56;
+}
+
+.trans:hover {
+  background: #ff0e56;
+  color: #ffffff;
+}
+
+.container2 {
+  background-color: #ffd2df;
+  padding: 2rem 1rem;
+}
+
+.topic {
+  color: #07b0b6;
+  text-transform: capitalize;
+}
+
+.headline {
+  font-family: "Jost";
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 500;
+}
+
+.essay {
+  font-size: 0.875rem;
+}
+
+.trans {
+  background: transparent;
+  border: 2px solid #ff0e56;
+  color: #ff0e56;
+}
+
+.container3 {
+  padding: 4rem 1rem;
+}
+
+.container3 .program-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
+}
+
+.container3 .program-image img {
+  width: 50%;
+  height: 200px;
+}
+
+.plan {
+  background-color: #e6e6e6;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1.5rem 0;
+  padding-bottom: 2rem;
+  border-radius: 7px;
+}
+
+.plan img {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.plan .plan-text {
+  padding: 1rem;
+}
+
+.plan .plan-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.plan .plan-section .amount {
+  font-size: 2rem;
+  color: #07b0b6;
+  font-weight: 500;
+  font-family: "Jost";
+}
+
+.plan .plan-section .amount h6 {
+  margin: 0;
+}
+
+.plan .plan-section .amount span {
+  display: block;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.container4 {
+  padding: 1rem;
+}
+
+.container5 {
+  padding: 1rem;
+}
+
+.container5 .essay {
+  font-size: .85rem;
+}
+
+.container6 {
+  margin: 2rem 0 0;
+  padding: 3rem 1rem;
+  text-align: center;
+  height: auto;
+  background-color: rgba(255, 14, 86, 0.5);
+  color: #ffffff;
+}
+
+.container6 img {
+  height: 100%;
+}
+
+.container6 .mission {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+.container6 .topic {
+  color: #ffffff;
+}
+
+.container6 svg {
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+
+.container6 .headline {
+  text-transform: capitalize;
+}
+
+.container6 p {
+  font-size: 0.875rem;
+}
+
+.concrete {
+  background-image: url("../images/ukrainebg.jpg");
+  margin: 0;
+  position: relative;
+}
+
+.concrete img {
+  height: 700px;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.concrete .help {
+  background-color: rgba(0, 255, 255, 0.6);
+  color: #111;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.concrete .sub::before {
+  color: #ffffff;
+}
+
+.concrete .bar {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.concrete .achieve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  color: #000000;
+  padding: .5rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.concrete .first-achieve {
+  width: 45%;
+  animation: myBar 4s linear ease;
+  -webkit-animation: myBar 4s ease;
+  position: relative;
+}
+
+.concrete .second-achieve {
+  width: 33%;
+  animation: secondBar 4s linear ease;
+  -webkit-animation: secondBar 4s ease;
+  position: relative;
+}
+
+.concrete p {
+  margin: 0;
+}
+
+@-webkit-keyframes myBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes myBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@-webkit-keyframes secondBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 86%;
+  }
+}
+
+@keyframes secondBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 33%;
+  }
+}
+
+.container7 {
+  padding: 1rem;
+  /* Swiper Class*/
+}
+
+.container7 .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container7 .plan {
+  height: 500px;
+  width: 330px;
+}
+
+.container7 a {
+  color: #ff0e56;
+  border-bottom: 2px solid #ff0e56;
+  text-decoration: none;
+}
+
+.swiper-navigation {
+  position: relative;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: none;
+  color: #2e2e2e;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1rem;
+  border: 1px solid #2e2e2e;
+  padding: 1rem;
+}
+
+.swiper-button-next {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.swiper-button-next {
+  left: 60px;
+  -webkit-transform: rotate(3600deg);
+          transform: rotate(3600deg);
+}
+
+.more {
+  text-align: right;
+}
+
+.more .more-links {
+  font-size: 1rem;
+  color: #ff0e56;
+  border-bottom: 1px solid #ff0e56;
+  cursor: pointer;
+}
+
+.more .more-links:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  font-family: "Jost";
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.footer .footer-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  gap: 2rem;
+  width: 95%;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.footer .footer-container input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer .footer-container .headline {
+  text-transform: uppercase;
+}
+
+.footer .footer-container .headline p {
+  font-size: 0.875rem;
+}
+
+.footer .footer-container .contacts section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.footer .footer-container .social-media button {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.footer .footer-container .social-media :hover {
+  opacity: 0.7;
+}
+
+.footer .footer-container .social-media svg {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.footer .footer-container .social-media .facebook {
+  background-color: #0f256b;
+}
+
+.footer .footer-container .social-media .youtube {
+  background-color: red;
+}
+
+.footer .footer-container .social-media .twitter {
+  background-color: #3122ff;
+}
+
+.footer .footer-container .social-media .linkedin {
+  background-color: #07b0b6;
+}
+
+.footer .footer-container .subscribe input::-webkit-input-placeholder {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.footer .footer-container .subscribe input:-ms-input-placeholder {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.footer .footer-container .subscribe input::-ms-input-placeholder {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.footer .footer-container .subscribe input::placeholder {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.footer .footer-container .subscribe button {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.footer .copy {
+  margin: 0;
+  text-align: center;
+}
+
+.scroll-link {
+  position: fixed;
+  right: 6%;
+  bottom: 2%;
+  padding: 0.75rem 1rem;
+  background-color: #ff0e56;
+  border-radius: 5px;
+}
+
+.scroll-link svg {
+  color: #ffffff;
+}
+
+@media (max-width: 31.5em) {
+  .nav-container .nav-toggle .menu-btn {
+    font-size: 0.75rem;
+  }
+  .nav-container .container1 .tophead {
+    font-size: 1.5rem;
+  }
+  .nav-container .container1 .worlder {
+    font-size: 0.8rem;
+  }
+  .logo svg {
+    font-size: 1rem;
+  }
+  .logo .title {
+    font-size: 1rem;
+  }
+  .headline {
+    font-size: 1.25rem;
+  }
+  .essay {
+    font-size: 0.75rem;
+  }
+  .topic {
+    font-size: 0.8rem;
+  }
+  .donate {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+  .plan .plan-section .amount h6 {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .plan .plan-section .amount span {
+    font-size: 0.75rem;
+  }
+  .container5 .essay {
+    font-size: 0.75rem;
+  }
+  .container6 p {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  .container6 svg {
+    font-size: 1rem;
+  }
+  .container7 a {
+    font-size: 0.8rem;
+  }
+  .concrete p {
+    font-size: 0.75rem;
+  }
+  .more .more-links {
+    font-size: 0.8rem;
+  }
+  .footer .footer-container .social-media svg {
+    font-size: 1rem;
+  }
+  .footer .footer-container .social-media button {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav-container {
+    padding: 2rem;
+  }
+  .nav-container .container1 {
+    max-width: 800px;
+  }
+  .nav-container .container1 .tophead {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .container2,
+  .container3 {
+    padding: 4rem 3rem;
+  }
+  .program {
+    max-width: 450px;
+  }
+  .headline {
+    font-size: 2rem;
+  }
+  .mission {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -o-object-position: center;
+       object-position: center;
+  }
+  .programs-container,
+  .container5 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .footer .footer-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1270px) {
+  .plan {
+    height: 500px;
+  }
+  .concrete .help {
+    width: 97.5%;
+  }
+  .container4 {
+    padding: auto 4rem;
+  }
+}
+
+.motto {
+  margin: 2rem 0;
+}
+
+.container1-contact {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container1-contact .headline {
+  text-transform: capitalize;
+}
+
+.container1-contact #message {
+  margin-top: 1rem;
+  width: 100%;
+  height: 250px;
+}
+
+.container1-contact form {
+  width: 100%;
+}
+
+.container1-contact input {
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid #2e2e2e;
+  padding: 1rem;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.container1-contact .donate {
+  border: 2px solid #07b0b6;
+  background: none;
+  color: #07b0b6;
+}
+
+.container1-contact .donate:hover {
+  border: none;
+  background-color: #07b0b6;
+  color: #ffffff;
+}
+
+.container1-contact .contact-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.container1-contact .contact-container svg {
+  font-size: 1.5rem;
+}
+
+.container1-contact .contact-container .headline {
+  font-size: 1rem;
+}
+
+.container1-contact .contact-container .headline span {
+  display: block;
+  font-size: .85rem;
+  color: #2e2e2e;
+  font-weight: 300;
+}
+
+.donate-container {
+  background-image: url(/images/donate.jpeg);
+}
+
+.nav-container .none {
+  display: none;
+}
+
+.form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: .5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.form-btn .btn {
+  padding: 1rem;
+  font: 1rem "Jost";
+  text-transform: capitalize;
+}
+
+.form-btn .btc {
+  border: 2px orange solid;
+}
+
+.form-btn .btc svg {
+  background-color: #ffffff;
+  color: orange;
+  border-radius: 50%;
+}
+
+.form-btn .eth {
+  border: 2px purple solid;
+}
+
+.form-btn .usdt {
+  border: 2px green solid;
+}
+
+.form-btn .btc:hover {
+  background-color: orange;
+  color: #ffffff;
+}
+
+.form-btn .eth:hover {
+  background-color: purple;
+  color: #ffffff;
+}
+
+.form-btn .usdt:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+.form-btn .btn:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.tooltip {
+  text-align: center;
+}
+
+.tooltip button {
+  background-color: #ff0e56;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+
+.donation-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#deposit {
+  border: none;
+  text-align: center;
+  width: 30%;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #000000;
+}
+
+#deposit::-webkit-input-placeholder {
+  font-size: 1.5rem;
+}
+
+#deposit:-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+#deposit::-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+#deposit::placeholder {
+  font-size: 1.5rem;
+}
+
+.crypto-amount {
+  text-transform: uppercase;
+}
+
+#note {
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+#note::-webkit-input-placeholder {
+  font-size: 1.5rem;
+}
+
+#note:-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+#note::-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+#note::placeholder {
+  font-size: 1.5rem;
+}
+
+#note {
+  height: 100px;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: .5rem;
+  gap: .25em;
+}
+
+.form-group .headline {
+  text-align: center;
+}
+
+.form-group:last-child {
+  margin: 0;
+}
+
+.form-group > label {
+  font-weight: bold;
+  font: 1.5rem "Jost";
+  color: #333;
+  text-transform: capitalize;
+}
+
+.form-group > input {
+  border: 1px solid #000000;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.barcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #ff0e56;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.barcode img {
+  width: 150px;
+  height: 150px;
+}
+
+.blog-container {
+  background-image: url(/images/blog.jpg);
+}
+
+.post-container {
+  padding: 1rem;
+}
+
+.about-container {
+  background-image: url(/images/istockphoto-1300834175-170667a.jpg);
+}
+/*# sourceMappingURL=styles.css.map */

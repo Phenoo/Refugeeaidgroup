@@ -1,0 +1,953 @@
+// ------------------------FONTS--------------------------------
+$poppins: "Poppins";
+$arial: "Arial";
+$Livvic :"Livvic";
+$sourcesans: "Jost";
+// ------------------------COLORS---------------------------------------- 
+$skyblue: #0f256b;
+$orange: #effed0;
+$litorange:#ff0e56;
+$transorange:#ffd2df;
+$greenblues:rgb(7, 176, 182);
+$black: #000000;
+$white: #ffffff;
+$gray: #2e2e2e;
+// ------------------------PARAMETERS--------------------------------
+$circle:50%;
+$rem1: 1rem;
+$rem1_5: 1.5rem;
+$rem2: 2rem;
+$rem3: 3rem;
+$rem4: 4rem;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $poppins;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    border: 0;
+    background: none;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+
+/* 
+::placeholder {
+    padding: 0 $rem1;
+    font-size: $rem1;
+    font-family: $poppins;
+} */
+
+.nav-container {
+    background-image: url(/images/IMG_20220327_002904.jpg);
+    background-position: 100%;
+    height: auto;
+    padding: 0.2rem $rem1 $rem1;
+    background-size: cover;
+    .header {
+        background-color: $skyblue;
+        padding: 0.5rem 0.75rem;
+        margin: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 3px;
+    }
+    .nav-donate {
+        margin: 0;
+        padding: .75rem;
+        display: block;
+        #nav-donate:hover {
+            font-weight: 700;
+        }
+        .nav-donate-btn {
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            text-transform: capitalize;
+            font-family: $sourcesans;
+            background-color: $litorange;
+            color: $white;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border-radius: 5px;
+            margin-bottom: $rem1_5;
+        }
+    }
+    .nav-toggle {
+        background-color: $gray;
+        width: 100%;
+        text-align: right;
+        border-radius: 3px;
+        .menu-btn {
+            text-transform: uppercase;
+            background-color: $black;
+            color: $white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-family: $poppins;
+            font-size: 1rem;
+            svg {
+                font-weight: 200;
+            }
+        }
+    }
+    .container1 {
+        margin-top: $rem4;
+        color: $white;
+        padding-bottom: $rem1_5;
+        .tophead {
+            font-size: $rem2;
+            line-height: 0.9;
+            margin: 0 0 $rem1_5;
+            font-family: $sourcesans;
+        }
+        .worlder {
+            font-size: $rem1;
+            line-height: 0.9;
+            margin: $rem1_5 0 $rem3;
+        }
+        .donate {
+            background-color: $greenblues;
+        }
+        .donate:hover {
+            background-color: $greenblues;
+            color: $white;
+            border: none;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Sidenotez-Demo';
+    gap: 2px;
+    svg {
+        color: $litorange;
+        font-size: $rem2
+    }
+    .title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: $rem1_5;
+        color: $white;
+        margin: 0;
+    }
+}
+
+.links {
+    background-color: $gray;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s linear;
+    a {
+        display: block;
+        text-transform: capitalize;
+        color: $white;
+        padding: 0.5rem;
+        transition: all 0.4s linear;
+    }
+    a:hover {
+        background-color: $litorange;
+        padding-left: $rem2;
+        transition: all 0.5s ease;
+    }
+}
+
+.show-links {
+    z-index: 102;
+    height: 14rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.button-div {
+    margin: $rem1_5 0;
+}
+
+.donate {
+    text-transform: capitalize;
+    font-family: $sourcesans;
+    background-color: $litorange;
+    color: $white;
+    padding: $rem1 $rem1_5;
+    font-size: $rem1;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: $rem1_5;
+}
+
+.donate:hover {
+    transition: all 0.5s ease-in-out;
+}
+
+.donate:hover {
+    border: 2px solid $litorange;
+    background: none;
+    color: $litorange;
+}
+
+.trans:hover {
+    background: $litorange;
+    color: $white;
+}
+
+.container2 {
+    background-color: $transorange;
+    padding: $rem2 $rem1;
+}
+
+.topic {
+    color: $greenblues;
+    text-transform: capitalize;
+}
+
+.headline {
+    font-family: $sourcesans;
+    font-size: $rem1_5;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 500;
+}
+
+.essay {
+    font-size: 0.875rem;
+}
+
+.trans {
+    background: transparent;
+    border: 2px solid $litorange;
+    color: $litorange;
+}
+
+.container3 {
+    padding: $rem4 $rem1;
+    .program-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $rem2 0;
+    }
+    .program-image img {
+        width: 50%;
+        height: 200px;
+    }
+}
+
+.plan {
+    background-color: #e6e6e6;
+    height: fit-content;
+    margin: $rem1_5 0;
+    padding-bottom: $rem2;
+    border-radius: 7px;
+    img {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .plan-text {
+        padding: $rem1;
+    }
+    .plan-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: $rem1_5;
+        .amount {
+            font-size: $rem2;
+            color: $greenblues;
+            font-weight: 500;
+            font-family: $sourcesans;
+            h6 {
+                margin: 0;
+            }
+            span {
+                display: block;
+                text-transform: capitalize;
+                font-weight: 400;
+                font-size: $rem1;
+                color: $black;
+            }
+        }
+    }
+}
+
+.container4 {
+    padding: $rem1;
+}
+
+.container5 {
+    padding: $rem1;
+    .essay {
+        font-size: .85rem;
+    }
+}
+
+.container6 {
+    margin: $rem2 0 0;
+    padding: $rem3 $rem1;
+    text-align: center;
+    height: auto;
+    background-color: rgba(255, 14, 86, 0.5);
+    color: $white;
+    img {
+        height: 100%;
+    }
+    .mission {
+        display: grid;
+        place-items: center;
+        gap: $rem1;
+    }
+    .topic {
+        color: $white;
+    }
+    svg {
+        border-radius: 50%;
+        color: $white;
+        font-size: $rem2;
+        font-weight: 200;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: $rem1;
+    }
+    .headline {
+        text-transform: capitalize;
+    }
+    p {
+        font-size: 0.875rem;
+    }
+}
+
+.concrete {
+    background-image: url('../images/ukrainebg.jpg');
+    margin: 0;
+    position: relative;
+    img {
+        height: 700px;
+        object-position: center;
+    }
+    .help {
+        background-color: rgba(0, 255, 255, 0.6);
+        color: #111;
+        padding: $rem1;
+        font-weight: 600;
+    }
+    .sub::before {
+        color: $white
+    }
+    .bar {
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        margin: $rem1 0;
+    }
+    .achieve {
+        display: flex;
+        justify-content: space-between;
+        background-color: $white;
+        color: $black;
+        padding: .5rem;
+        border-radius: 5px 0 0 5px;
+    }
+    .first-achieve {
+        width: 45%;
+        animation: myBar 4s linear ease;
+        -webkit-animation: myBar 4s ease;
+        position: relative;
+    }
+    .second-achieve {
+        width: 33%;
+        animation: secondBar 4s linear ease;
+        -webkit-animation: secondBar 4s ease;
+        position: relative;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+@-webkit-keyframes myBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes myBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45%;
+    }
+}
+
+@-webkit-keyframes secondBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes secondBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 33%;
+    }
+}
+
+.container7 {
+    padding: $rem1;
+    /* Swiper Class*/
+    .swiper-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .plan {
+        height: 500px;
+        width: 330px;
+    }
+    a {
+        color: $litorange;
+        border-bottom: 2px solid $litorange;
+        text-decoration: none;
+    }
+}
+
+.swiper-navigation {
+    position: relative;
+    padding: $rem1;
+    margin: 2rem 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background: none;
+    color: $gray;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 1rem;
+    border: 1px solid $gray;
+    padding: $rem1;
+}
+
+.swiper-button-next {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.swiper-button-next {
+    left: 60px;
+    transform: rotate(3600deg);
+}
+
+.more {
+    text-align: right;
+    .more-links {
+        font-size: $rem1;
+        color: $litorange;
+        border-bottom: 1px solid $litorange;
+        cursor: pointer;
+    }
+    .more-links:hover {
+        transform: scale(1.1);
+    }
+}
+
+.footer {
+    background-color: $gray;
+    color: $white;
+    font-family: $sourcesans;
+    width: 100%;
+    padding: 2rem 0;
+    .footer-container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: $rem2;
+        width: 95%;
+        margin: 1rem auto;
+        overflow: hidden;
+        input {
+            width: 100%;
+            padding: $rem1;
+        }
+        .headline {
+            text-transform: uppercase;
+            p {
+                font-size: 0.875rem;
+            }
+        }
+        .contacts {
+            section {
+                display: flex;
+                align-items: center;
+                column-gap: $rem1;
+            }
+        }
+        .social-media {
+            button {
+                padding: $rem1;
+                border-radius: 5px;
+            }
+             :hover {
+                opacity: 0.7;
+            }
+            svg {
+                font-size: $rem1_5;
+                color: $white;
+            }
+            .facebook {
+                background-color: $skyblue;
+            }
+            .youtube {
+                background-color: red;
+            }
+            .twitter {
+                background-color: #3122ff;
+            }
+            .linkedin {
+                background-color: $greenblues;
+            }
+        }
+        .subscribe {
+            input::placeholder {
+                font-size: $rem1;
+                padding: $rem1;
+            }
+            button {
+                width: 100%;
+                margin: $rem1 0;
+            }
+        }
+    }
+    .copy {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.scroll-link {
+    display: none;
+    position: fixed;
+    right: 6%;
+    bottom: 2%;
+    padding: 0.75rem $rem1;
+    background-color: $litorange;
+    border-radius: 5px;
+    svg {
+        color: $white;
+    }
+}
+
+@media (max-width: 31.5em) {
+    .nav-container {
+        .nav-toggle {
+            .menu-btn {
+                font-size: 0.75rem;
+            }
+        }
+        .container1 {
+            .tophead {
+                font-size: 1.5rem;
+            }
+            .worlder {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .logo {
+        svg {
+            font-size: 1rem;
+        }
+        .title {
+            font-size: 1rem;
+        }
+    }
+    .headline {
+        font-size: 1.25rem;
+    }
+    .essay {
+        font-size: 0.75rem;
+    }
+    .topic {
+        font-size: 0.8rem;
+    }
+    .donate {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+    .plan {
+        .plan-section {
+            .amount {
+                h6 {
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                }
+                span {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+    .container5 {
+        .essay {
+            font-size: 0.75rem;
+        }
+    }
+    .container6 {
+        p {
+            font-size: 0.6rem;
+            margin: 0;
+        }
+        svg {
+            font-size: 1rem;
+        }
+    }
+    .container7 {
+        a {
+            font-size: 0.8rem;
+        }
+    }
+    .concrete {
+        p {
+            font-size: 0.75rem;
+        }
+    }
+    .more .more-links {
+        font-size: 0.8rem;
+    }
+    .footer {
+        .footer-container {
+            .social-media {
+                svg {
+                    font-size: 1rem;
+                }
+                button {
+                    padding: 0.5rem
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .nav-container {
+        padding: $rem2;
+        .container1 {
+            max-width: 800px;
+            .tophead {
+                font-size: $rem4;
+                font-weight: 500;
+            }
+        }
+    }
+    .container2,
+    .container3 {
+        padding: $rem4 $rem3;
+    }
+    .program {
+        max-width: 450px;
+    }
+    .headline {
+        font-size: $rem2;
+    }
+    .mission {
+        grid-template-columns: repeat(3, 1fr);
+        object-position: center;
+    }
+    .programs-container,
+    .container5 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $rem1;
+    }
+    .footer {
+        .footer-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: $rem3;
+        }
+    }
+}
+
+@media (min-width: 1270px) {
+    .plan {
+        height: 500px;
+    }
+    .concrete {
+        .help {
+            width: 97.5%;
+        }
+    }
+    .container4 {
+        padding: auto $rem4;
+    }
+}
+
+/////ABOUT HTML/////{
+.motto {
+    margin: $rem2 0;
+}
+
+//CONTACT HTML////////
+.container1-contact {
+    width: 90%;
+    margin: 0 auto;
+    padding: $rem1;
+    .headline {
+        text-transform: capitalize;
+    }
+    #message {
+        margin-top: $rem1;
+        width: 100%;
+        height: 250px;
+    }
+    form {
+        width: 100%;
+    }
+    input {
+        display: block;
+        margin: $rem1 0;
+        border: 1px solid $gray;
+        padding: $rem1;
+        width: 90%;
+        border-radius: 5px;
+    }
+    .donate {
+        border: 2px solid $greenblues;
+        background: none;
+        color: $greenblues;
+    }
+    .donate:hover {
+        border: none;
+        background-color: $greenblues;
+        color: $white;
+    }
+    .contact-container {
+        div {
+            display: flex;
+            align-items: center;
+            margin: $rem1;
+        }
+        svg {
+            font-size: $rem1_5;
+        }
+        .headline {
+            font-size: $rem1;
+            span {
+                display: block;
+                font-size: .85rem;
+                color: $gray;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+////DONATE.HTML////////////////////////////////
+.donate-container {
+    background-image: url(/images/donate.jpeg);
+}
+
+.nav-container {
+    .none {
+        display: none;
+    }
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    column-gap: $rem1;
+    row-gap: .5rem;
+    flex-wrap: wrap;
+    padding: $rem1;
+    .btn {
+        padding: $rem1;
+        font: $rem1 $sourcesans;
+        text-transform: capitalize;
+    }
+    .btc {
+        border: 2px orange solid;
+        svg {
+            background-color: $white;
+            color: orange;
+            border-radius: $circle;
+        }
+    }
+    .eth {
+        border: 2px purple solid;
+    }
+    .usdt {
+        border: 2px green solid;
+    }
+    .btc:hover {
+        background-color: orange;
+        color: $white;
+    }
+    .eth:hover {
+        background-color: purple;
+        color: $white;
+    }
+    .usdt:hover {
+        background-color: green;
+        color: $white;
+    }
+    .btn:hover {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.tooltip {
+    text-align: center;
+    button {
+        background-color: $litorange;
+        color: $white;
+        border-radius: 5px;
+        padding: 0.5rem;
+        text-transform: capitalize;
+    }
+}
+
+.donation-amount {
+    display: flex;
+    align-items: center;
+}
+
+#deposit {
+    border: none;
+    text-align: center;
+    width: 30%;
+    font-size: $rem1_5;
+    border-bottom: 2px solid $black;
+    &::placeholder {
+        font-size: $rem1_5;
+    }
+}
+
+.crypto-amount {
+    text-transform: uppercase;
+}
+
+#note {
+    margin: $rem1 0;
+    padding: $rem1;
+    font-size: $rem1_5;
+    width: 90%;
+    &::placeholder {
+        font-size: $rem1_5;
+    }
+}
+
+#note {
+    height: 100px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    gap: .25em;
+    .headline {
+        text-align: center;
+    }
+}
+
+.form-group:last-child {
+    margin: 0;
+}
+
+.form-group>label {
+    font-weight: bold;
+    font: $rem1_5 $sourcesans;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.form-group>input {
+    border: 1px solid $black;
+    font-size: $rem1;
+    padding: $rem1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.barcode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: $circle;
+    border: 2px solid $litorange;
+    padding: $rem1;
+    margin: $rem1;
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+///BLOG CONTAINER////////////////////////////////
+.blog-container {
+    background-image: url(/images/blog.jpg);
+}
+
+.post-container {
+    padding: $rem1;
+}
+
+.about-container {
+    background-image: url(/images/istockphoto-1300834175-170667a.jpg)
+}
